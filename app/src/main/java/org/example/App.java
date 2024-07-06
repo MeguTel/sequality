@@ -4,11 +4,14 @@
 package org.example;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+  public String getGreeting() {
+    return "Hello World!";
+  }
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
-    }
+  public static void main(String[] args) {
+    System.out.println(new App().getGreeting());
+    new Calculate().sum_and(2, 3);
+    new Calculate().sum_to(1, 10);
+    new Calculate().sum_odd(1, 10);
+  }
 }
